@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="720.0" maxWidth="480.0" minHeight="720.0" minWidth="480.0" prefHeight="720.0" prefWidth="480.0" style="-fx-background-color: #25357E;" stylesheets="@./menu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GameController">
+   <children>
+      <AnchorPane prefHeight="61.0" prefWidth="480.0">
+         <children>
+            <Button fx:id="call" mnemonicParsing="false" prefHeight="64.0" prefWidth="64.0" styleClass="btn">
+               <graphic>
+                  <ImageView fx:id="call" fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/suna.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="audience" layoutX="132.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="64.0" styleClass="btn">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/audienta.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="fifty" layoutX="261.0" layoutY="-5.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="98.0" styleClass="btn" text="50/50">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="skip" layoutX="382.0" mnemonicParsing="false" prefHeight="62.0" prefWidth="98.0" styleClass="btn">
+               <graphic>
+                  <ImageView fitHeight="64.0" fitWidth="64.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../assets/skip.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label fx:id="question" layoutY="156.0" prefHeight="17.0" prefWidth="480.0" style="-fx-alignment: center;" text="Question" />
+      <AnchorPane layoutX="38.0" layoutY="334.0" prefHeight="347.0" prefWidth="404.0">
+         <children>
+            <Button fx:id="answer1" mnemonicParsing="false" onAction="#answer1" prefHeight="130.0" prefWidth="130.0" styleClass="btn">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="answer2" layoutX="274.0" mnemonicParsing="false" onAction="#answer2" prefHeight="130.0" prefWidth="130.0" styleClass="btn">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="answer3" layoutY="217.0" mnemonicParsing="false" onAction="#answer3" prefHeight="130.0" prefWidth="130.0" styleClass="btn">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="answer4" layoutX="274.0" layoutY="217.0" mnemonicParsing="false" onAction="#answer4" prefHeight="130.0" prefWidth="130.0" styleClass="btn">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Label fx:id="question_id_label" layoutX="193.0" layoutY="177.0" text="0" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</Pane>

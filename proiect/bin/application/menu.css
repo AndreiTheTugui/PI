@@ -1,0 +1,22 @@
+.btn {
+	-fx-background-color: navy;
+	-fx-font-size: 24px;
+	-fx-font-family: Arial Rounded MT;
+	-fx-font-weight: bold;
+	
+}
+
+.btn:hover {
+	-fx-background-color: blue;
+}
+
+.btn:pressed {
+	-fx-background-color: teal;
+}
+
+.label {
+	-fx-font-size: 24px;
+	-fx-font-family: Arial Rounded MT;
+	-fx-font-weight: bold;
+}
+

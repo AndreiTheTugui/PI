@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="720.0" maxWidth="480.0" minHeight="720.0" minWidth="480.0" prefHeight="720.0" prefWidth="480.0" style="-fx-background-color: #25357E;" stylesheets="@./menu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <Button fx:id="login_btn" layoutX="191.0" layoutY="418.0" mnemonicParsing="false" onAction="#login_check" styleClass="btn" text="Login">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="register_btn" layoutX="175.0" layoutY="418.0" mnemonicParsing="false" onAction="#register_check" styleClass="btn" text="Register" visible="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="user_text" layoutX="31.0" layoutY="107.0" styleClass="label" text="Username:" textFill="#000000" />
+      <Label layoutX="31.0" layoutY="147.0" styleClass="label" text="Password:" textFill="#000000" />
+      <TextField fx:id="user_field" layoutX="161.0" layoutY="108.0" prefHeight="25.0" prefWidth="255.0" />
+      <PasswordField fx:id="passwrd_field" layoutX="161.0" layoutY="148.0" prefHeight="25.0" prefWidth="255.0" />
+      <Label fx:id="invalid_login" layoutX="166.0" layoutY="253.0" styleClass="label" text="Invalid login!" textFill="red" visible="false" />
+      <Button fx:id="register_btn2" layoutX="175.0" layoutY="570.0" mnemonicParsing="false" onAction="#register_page" styleClass="btn" text="Register">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="login_btn2" layoutX="191.0" layoutY="570.0" mnemonicParsing="false" onAction="#login_page2" styleClass="btn" text="Login" visible="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="confirm_text" layoutX="31.0" layoutY="185.0" prefHeight="67.0" prefWidth="124.0" styleClass="label" text="Confirm&#10;Password:" textFill="#000000" visible="false" />
+      <PasswordField fx:id="passwrd_field2" layoutX="158.0" layoutY="206.0" prefHeight="25.0" prefWidth="255.0" visible="false" />
+      <Button fx:id="exit_btn" layoutX="201.0" layoutY="663.0" mnemonicParsing="false" onAction="#exit" styleClass="btn" text="Exit">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</Pane>

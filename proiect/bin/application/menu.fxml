@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="720.0" maxWidth="480.0" minHeight="720.0" minWidth="480.0" prefHeight="720.0" prefWidth="480.0" style="-fx-background-color: #25357E;" stylesheets="@./menu.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="160.0" layoutY="421.0" mnemonicParsing="false" onAction="#game" styleClass="btn" text="Start Game">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button layoutX="157.0" layoutY="474.0" mnemonicParsing="false" styleClass="btn" text="Scoreboard">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="exit_btn" layoutX="201.0" layoutY="524.0" mnemonicParsing="false" onAction="#exit" styleClass="btn" text="Exit">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ImageView fitHeight="402.0" fitWidth="351.0" layoutX="64.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/milionar.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="14.0" layoutY="663.0" mnemonicParsing="false" styleClass="btn" text="Feedback">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="logout_btn" layoutX="358.0" layoutY="663.0" mnemonicParsing="false" onAction="#login_page" styleClass="btn" text="Logout">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="343.0" layoutY="599.0" text="Logged in," />
+      <Label fx:id="logged_name" layoutX="15.0" layoutY="626.0" prefHeight="27.0" prefWidth="449.0" style="-fx-alignment: top-right;" text="" />
+   </children>
+</Pane>
