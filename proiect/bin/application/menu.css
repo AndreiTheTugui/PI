@@ -6,6 +6,14 @@
 	
 }
 
+.btn_true {
+	-fx-background-color: green;
+}
+
+.btn_false {
+	-fx-background-color: red;
+}
+
 .btn:hover {
 	-fx-background-color: blue;
 }

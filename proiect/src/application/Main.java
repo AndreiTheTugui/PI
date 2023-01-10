@@ -12,7 +12,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage stage) {
 		try {
-			Parent root = FXMLLoader.load(getClass().getResource("login.fxml"));
+			Parent root = FXMLLoader.load(getClass().getResource("menu.fxml"));
 			Scene scene = new Scene(root);
 			stage.getIcons().add(new Image(("/icon.png")));
 			stage.setTitle("Vrei sa fii milionar?");

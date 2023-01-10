@@ -34,7 +34,7 @@ public class MainController {
     	stage.setScene(scene);
     	stage.show();
     	GameController gamecontroller = loader.getController();
-    	gamecontroller.set_question(1);
+    	gamecontroller.set_question(3);
 	}
 	
     public void exit(ActionEvent event) throws Exception{
